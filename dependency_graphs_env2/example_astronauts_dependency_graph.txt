@@ -1,0 +1,2 @@
+get_astronauts >> print_astronaut_craft
+print_astronaut_craft (no downstream tasks)

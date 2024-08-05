@@ -1,0 +1,15 @@
+begin >> check_day_of_week
+check_day_of_week >> weekday >> weekend
+end (no downstream tasks)
+weekday >> weekday_activities.which_weekday_activity_day
+weekday_activities.contributing_to_Airflow >> end
+weekday_activities.family_dinner >> end
+weekday_activities.guitar_lessons >> end
+weekday_activities.soccer_practice >> end
+weekday_activities.studying >> end
+weekday_activities.which_weekday_activity_day >> weekday_activities.contributing_to_Airflow >> weekday_activities.family_dinner >> weekday_activities.guitar_lessons >> weekday_activities.soccer_practice >> weekday_activities.studying
+weekend >> weekend_activities.which_weekend_activity_day
+weekend_activities._going_to_the_beach >> weekend_activities.inviting_friends
+weekend_activities.inviting_friends >> end
+weekend_activities.sleeping_in >> end
+weekend_activities.which_weekend_activity_day >> weekend_activities._going_to_the_beach >> weekend_activities.sleeping_in
