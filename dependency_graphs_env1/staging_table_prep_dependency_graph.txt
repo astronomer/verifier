@@ -1,5 +1,0 @@
-S3_List >> prepare_list
-create_staging_tables >> populate_staging_tables
-populate_staging_tables (no downstream tasks)
-prepare_list >> create_staging_tables >> populate_staging_tables
-truncate_staging >> S3_List

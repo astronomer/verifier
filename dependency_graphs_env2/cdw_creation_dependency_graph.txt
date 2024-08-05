@@ -1,4 +1,0 @@
-create_data_prep >> create_history
-create_history >> create_truncate_tables_function
-create_staging >> create_data_prep
-create_truncate_tables_function (no downstream tasks)
